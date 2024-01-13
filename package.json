@@ -1,0 +1,30 @@
+{
+  "name": "blogging-web-application",
+  "version": "1.0.0",
+  "description": "This is a simple blogging web application built using Node.js, Express, MongoDB, and Bootstrap.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekkushwahaa/Blogging-Web-Application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishekkushwahaa/Blogging-Web-Application/issues"
+  },
+  "homepage": "https://github.com/abhishekkushwahaa/Blogging-Web-Application#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
