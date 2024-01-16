@@ -12,6 +12,22 @@
         <pre><%= blog.body %></pre>
     </div>
 
+    <div class="container mt-4">
+        <img src="<%= blog.createdBy.profilePicture %>" > <%= blog.createdBy.firstName %>
+    </div>
+
+    <div class="container mt-3">
+        <h3>Comments</h3>
+        <% if (locals.user) { %>
+            <form action="/blog/comment/<%= blog._id %>" method="post">
+                <div class="mb-3">
+                    <input name="Comments" type="text" class="form-control" placeholder="Enter your Comments">
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        <% } %>
+    </div>
+
     <%- include('partials/script') %>
 </body>
 </html>

@@ -22,8 +22,9 @@ app.use(checkForAuthenticationCookie('token'));
 app.use(express.static(path.resolve('./assets/')));
 app.use(express.static('./assets/uploads/'));
 
-
-mongoose.connect('mongodb://127.0.0.1:27017/blogbrust').then(() => console.log('Connected to MongoDB'));
+// Connect to MongoDB
+// localhost:default is the name of the database in MongoDB
+mongoose.connect('mongodb://localhost:default/blogbrust').then(() => console.log('Connected to MongoDB'));
 
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
