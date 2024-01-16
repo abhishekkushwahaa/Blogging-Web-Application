@@ -23,6 +23,10 @@ router.post('/Login', async (req, res) => {
     }
 });
 
+router.get('/Logout', (req, res) => {
+    res.clearCookie('token').redirect('/');
+});
+
 router.post('/Signup', async (req, res) => {
     const {firstName, email, password} = req.body;
     await User.create({firstName, email, password});

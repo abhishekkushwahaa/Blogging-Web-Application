@@ -7,13 +7,13 @@
 <body>
     <%- include('partials/nav') %>
 
-    <div class="container mt-3">
-        <% blogs.forEach(blog => { %>
+    <div class="container mt-3 mx-auto d-flex justify-content-around">
+        <% blogs.forEach(blogs => { %>
             <div class="card" style="width: 18rem;">
-                <img src="<%= blog.coverImageURL %>" class="card-img-top" alt="...">
+                <img src="<%= blogs.coverImage %>" class="card-img-top">
                 <div class="card-body">
-                  <h5 class="card-title"><%= blog.title %></h5>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title"> <%= blogs.title %> </h5>
+                  <a href="/blog/<%= blogs._id %>" class="btn btn-primary">View</a>
                 </div>
               </div>
         <% }) %>
