@@ -33,7 +33,7 @@ Make sure you have the following installed on your machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/blogging-web-app.git
+   git clone https://github.com/abhishekkushwahaa/Blogging-Web-Application.git
 
 ## Collaboration
 I am a strong believer in teamwork and collaboration. I enjoy working with designers, product managers, and other developers to build great products. Open and effective communication is essential, and I'm always open to feedback and new ideas.
